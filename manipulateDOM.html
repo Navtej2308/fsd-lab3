@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <style>
+        #para {
+            color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #container {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #image{
+
+            margin: 100px 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome to the Dynamic Web Page</h1>
+    <p id="para">This is a paragraph.</p>
+    <img id="image" src="image1.jpg" width="200" height="200" alt="Image">
+    
+    <div>
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="changeCSS()">Change CSS</button>
+        <button onclick="changeImage()">Change Image</button>
+        <button onclick="addText()">Add Text</button>
+        <button onclick="deleteNode()">Delete Node</button>
+    </div>
+
+    <div id="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
